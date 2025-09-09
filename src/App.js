@@ -10,8 +10,8 @@ export default function App() {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/tasks")
-      .then(res => setTasks(res.data));
+  axios.get(`${process.env.REACT_APP_API_URL}/api/tasks`)     
+    .then(res => setTasks(res.data));
   }, []);
 
   // Add a new task
@@ -21,26 +21,26 @@ export default function App() {
       return;
     }
 
-    const res = await axios.post("http://localhost:5000/api/tasks", { title });
+    const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/tasks`, { title });
     setTasks([...tasks, res.data]);
   };
 
   // Update a task
   const toggleTask = async (id, completed) => {
-    const res = await axios.put(`http://localhost:5000/api/tasks/${id}`, { completed: !completed });
+    const res = await axios.put(`${process.env.REACT_APP_API_URL}/api/tasks`, { completed: !completed });
     setTasks(tasks.map(t => (t._id === id ? res.data : t)));
   };
 
   // Update task title
   const updateTaskTitle = async (id, newTitle) => {
   if (!newTitle.trim()) return;
-  const res = await axios.put(`http://localhost:5000/api/tasks/${id}`, { title: newTitle });
+  const res = await axios.put(`${process.env.REACT_APP_API_URL}/api/tasks`, { title: newTitle });
   setTasks(tasks.map(t => (t._id === id ? res.data : t)));
    };
 
   // Delete a task
   const deleteTask = async (id) => {
-    await axios.delete(`http://localhost:5000/api/tasks/${id}`);
+    await axios.delete(`${process.env.REACT_APP_API_URL}/api/tasks`);
     setTasks(tasks.filter(t => t._id !== id));
   };
 
