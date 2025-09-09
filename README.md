@@ -27,6 +27,11 @@ A full-stack **CRUD application** built with **React (frontend)**, **Node.js + E
 - CORS, dotenv, morgan <br><br> 
 
 
+App runs at http://localhost:3000 <br><br>
 
-## 📂 Project Structure
+Backend runs at 👉 http://localhost:5000 <br><br>
+
+Live Demo : view here --> (https://d00055a.github.io/Task_manager_app/) <br><br>
+
+License © 2025 Daniel Dedja. All rights reserved.
 
