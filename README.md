@@ -31,7 +31,7 @@ A full-stack **CRUD application** built with **React (frontend)**, **Node.js + E
 **Platforms**
 - GitHub Pages(frontend)
 - Render(backend)
-- MongoDB Atlas(database) <br><br>>
+- MongoDB Atlas(database) <br><br>
 
 ## Live semo
 
