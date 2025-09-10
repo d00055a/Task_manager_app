@@ -26,7 +26,9 @@ A full-stack **CRUD application** built with **React (frontend)**, **Node.js + E
 - MongoDB + Mongoose
 - CORS, dotenv, morgan <br><br>
 
-## 🚀 Live Demo
+## Deployment
+
+## Live semo
 
 **Frontend**: [View on GitHub Pages](https://d00055a.github.io/Task_manager_app/)<br>
 
