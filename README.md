@@ -39,6 +39,15 @@ A full-stack **CRUD application** built with **React (frontend)**, **Node.js + E
 
 **Backend API**: [Hosted on Render](https://task-api-4e4u.onrender.com)<br><br>
 
+## Getting Started
+
+To get a local copy up and running, clone the repo and follow the setup instructions below:
+
+- git clone https://github.com/d00055a/Task_manager_app.git
+- git clone https://github.com/d00055a/Task_manager_backend.git
+
+
+
 
 License © 2025 Daniel Dedja. All rights reserved.
 
