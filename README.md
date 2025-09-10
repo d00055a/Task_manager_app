@@ -33,7 +33,7 @@ A full-stack **CRUD application** built with **React (frontend)**, **Node.js + E
 - Render(backend)
 - MongoDB Atlas(database) <br><br>
 
-## Live semo
+## Live demo
 
 **Frontend**: [View on GitHub Pages](https://d00055a.github.io/Task_manager_app/)<br>
 
