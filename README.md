@@ -31,7 +31,10 @@ App runs at http://localhost:3000 <br><br>
 
 Backend runs at 👉 http://localhost:5000 <br><br>
 
-Live Demo : view here --> (https://d00055a.github.io/Task_manager_app/) <br><br>
+## 🚀 Live Demo
 
+- **Frontend**: [View on GitHub Pages](https://d00055a.github.io/Task_manager_app/)<br>
+
+- **Backend API**: [Hosted on Render](https://task-api.onrender.com)<br><br>
 License © 2025 Daniel Dedja. All rights reserved.
 
