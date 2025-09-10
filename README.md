@@ -13,7 +13,7 @@ A full-stack **CRUD application** built with **React (frontend)**, **Node.js + E
 - Responsive UI with custom styling <br><br>  
 
 
-## Tech Stack
+## Tech stack
 
 **Frontend**
 - React
