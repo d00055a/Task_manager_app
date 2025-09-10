@@ -1,6 +1,7 @@
 # Task Manager App
 
-A full-stack **CRUD application** built with **React (frontend)**, **Node.js + Express (backend)** and **MongoDB (database)**.<br><br>  
+A full-stack **CRUD application** built with **React (frontend)**, **Node.js + Express (backend)** and **MongoDB (database)**.
+Designed to help users manage tasks efficiently with a clean UI and real-time updates.<br><br>  
 
 
 ## Features
