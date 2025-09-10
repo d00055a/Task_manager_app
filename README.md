@@ -44,7 +44,7 @@ A full-stack **CRUD application** built with **React (frontend)**, **Node.js + E
 To get a local copy up and running, clone the repo and follow the setup instructions below:
 
 - git clone https://github.com/d00055a/Task_manager_app.git
-- git clone https://github.com/d00055a/Task_manager_backend.git
+- git clone https://github.com/d00055a/Task_manager_backend.git <br><br>
 
 
 
