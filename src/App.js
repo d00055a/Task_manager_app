@@ -9,6 +9,7 @@ export default function App() {
   const [tasks, setTasks] = useState([]);
   const [showModal, setShowModal] = useState(false);
 
+  // Get tasks
   useEffect(() => {
     axios.get(`${process.env.REACT_APP_API_URL}/api/tasks/${id}`)
       .then(res => setTasks(res.data));
