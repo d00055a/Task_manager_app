@@ -24,12 +24,7 @@ A full-stack **CRUD application** built with **React (frontend)**, **Node.js + E
 - Node.js
 - Express.js
 - MongoDB + Mongoose
-- CORS, dotenv, morgan <br><br> 
-
-
-App runs at http://localhost:3000 <br><br>
-
-Backend runs at 👉 http://localhost:5000 <br><br>
+- CORS, dotenv, morgan <br><br>
 
 ## 🚀 Live Demo
 
