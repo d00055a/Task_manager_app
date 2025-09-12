@@ -47,7 +47,7 @@ Designed to help users manage tasks efficiently with a clean UI and real-time up
 ```bash
 git clone https://github.com/d00055a/Task_manager_app.git
 git clone https://github.com/d00055a/Task_manager_backend.git
-``` <br><br>
+``` 
 
 2. **Install dependencies**
 
