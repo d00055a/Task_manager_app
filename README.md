@@ -40,14 +40,47 @@ Designed to help users manage tasks efficiently with a clean UI and real-time up
 
 **Backend API**: [Hosted on Render](https://task-api-4e4u.onrender.com)<br><br>
 
-## Getting started
+## Local setup
 
-To get a local copy up and running, clone the repo and follow the setup instructions below:
+1. To get a local copy up and running, clone the repo and follow the setup instructions below:
 
 - git clone https://github.com/d00055a/Task_manager_app.git
 - git clone https://github.com/d00055a/Task_manager_backend.git <br><br>
 
+2. Install dependencies
+   
+```bash
+# Frontend
+cd Task_manager_app
+npm install
 
+# Backend
+cd ../Task_manager_backend
+npm install
+
+
+3. Configure environment variables
+
+In Task_manager_app/.env:
+
+```Env
+REACT_APP_API_URL=http://localhost:5000
+
+In Task_manager_backend/.env:
+```Env
+MONGO_URI=mongodb_connection_string
+PORT=5000
+
+4. Run both servers
+
+```bash
+# Backend
+cd Task_manager_backend
+node server.js
+
+# Frontend
+cd ../Task_manager_app
+npm start
 
 
 License © 2025 Daniel Dedja. All rights reserved.
