@@ -42,10 +42,11 @@ Designed to help users manage tasks efficiently with a clean UI and real-time up
 
 ## Local setup
 
-1. **To get a local copy up and running, clone the repo and follow the setup instructions below:**
+1. **Clone the repository**
 
-- git clone https://github.com/d00055a/Task_manager_app.git
-- git clone https://github.com/d00055a/Task_manager_backend.git <br><br>
+```bash
+git clone https://github.com/d00055a/Task_manager_app.git
+git clone https://github.com/d00055a/Task_manager_backend.git``` <br><br>
 
 2. **Install dependencies**
 
