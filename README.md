@@ -67,6 +67,7 @@ In Task_manager_app/.env:
 REACT_APP_API_URL=http://localhost:5000
 
 In Task_manager_backend/.env:
+
 ```Env
 MONGO_URI=mongodb_connection_string
 PORT=5000
