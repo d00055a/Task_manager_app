@@ -42,12 +42,12 @@ Designed to help users manage tasks efficiently with a clean UI and real-time up
 
 ## Local setup
 
-1. To get a local copy up and running, clone the repo and follow the setup instructions below:
+1. **To get a local copy up and running, clone the repo and follow the setup instructions below:**
 
 - git clone https://github.com/d00055a/Task_manager_app.git
 - git clone https://github.com/d00055a/Task_manager_backend.git <br><br>
 
-2. Install dependencies
+2. **Install dependencies**
    
 ```bash
 # Frontend
@@ -59,7 +59,7 @@ cd ../Task_manager_backend
 npm install
 
 
-3. Configure environment variables
+3. **Configure environment variables**
 
 In Task_manager_app/.env:
 
@@ -72,7 +72,7 @@ In Task_manager_backend/.env:
 MONGO_URI=mongodb_connection_string
 PORT=5000
 
-4. Run both servers
+4. **Run both servers**
 
 ```bash
 # Backend
