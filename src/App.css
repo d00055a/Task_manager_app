@@ -252,33 +252,37 @@ li input {
   background-color: #2931c6;
 }
 
-@media (max-width: 600px) {
-  
+@media (max-width: 480px) {
   .content {
     width: 90%;
     margin-top: 15vh;
     padding: 1.5rem;
-  }
-
-  .taskInput {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  .addButton {
-    width: 100%;
-    margin-top: 0.5rem;
-    border-radius: 5px;
+    box-sizing: border-box;
   }
 
   form {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
     align-items: stretch;
+  }
+
+  .taskInput {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 16px;
+  }
+
+  .addButton {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
   }
 
   ul {
     grid-template-columns: 1fr;
+    gap: 1rem;
     margin-top: 2rem;
   }
 
@@ -286,6 +290,7 @@ li input {
     max-width: 100%;
     grid-template-columns: 1fr;
     padding: 1rem;
+    word-break: break-word;
   }
 
   .taskActions {
@@ -298,11 +303,13 @@ li input {
   .deleteBtn {
     width: 48%;
     margin-left: 0;
+    font-size: 14px;
   }
 
   .saveBtn {
     width: 100%;
     margin-left: 0;
+    font-size: 14px;
   }
 
   .app-footer {
@@ -311,6 +318,3 @@ li input {
     font-size: 14px;
   }
 }
-
-
-
