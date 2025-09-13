@@ -36,9 +36,9 @@ Designed to help users manage tasks efficiently with a clean UI and real-time up
 
 ## Live demo
 
-**Frontend**: [View on GitHub Pages](https://d00055a.github.io/Task_manager_app/)<br>
+**Frontend**: https://d00055a.github.io/Task_manager_app/ <br>
 
-**Backend API**: [Hosted on Render](https://task-api-4e4u.onrender.com)<br><br>
+**Backend API**: https://task-api-4e4u.onrender.com (Hosted on Render) <br><br>
 
 ## Local setup
 
