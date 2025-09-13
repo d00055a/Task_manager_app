@@ -40,6 +40,8 @@ Designed to help users manage tasks efficiently with a clean UI and real-time up
 
 **Backend API**: https://task-api-4e4u.onrender.com (Hosted on Render) <br><br>
 
+- Please note: it may take up to 1 minute for the backend service to wake up (free hosting delay). Once loaded, everything works smoothly !
+
 ## Local setup
 
 1. **Clone the repository**
