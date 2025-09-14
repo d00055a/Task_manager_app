@@ -17,15 +17,19 @@ export default function App() {
 
   // Add a new task
   const addTask = async (title) => {
-    if (!title.trim()) {
-      setShowModal(true); 
-      return;
-    }
+  if (!title.trim()) {
+    setShowModal(true); 
+    return;
+  }
 
-    const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/tasks/${id}`, { title });
+  try {
+    const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/tasks`, { title });
     setTasks([...tasks, res.data]);
-  };
-
+  } catch (err) {
+    console.error("Error adding task:", err);
+  }
+};
+  
   // Update a task
   const toggleTask = async (id, completed) => {
     const res = await axios.put(`${process.env.REACT_APP_API_URL}/api/tasks/${id}`, { completed: !completed });
