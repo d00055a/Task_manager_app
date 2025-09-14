@@ -261,7 +261,7 @@ li input {
   }
 
   .taskInput {
-    width: 100%;
+    width: 96%;
     margin-bottom: 1rem;
   }
 
@@ -306,7 +306,7 @@ li input {
   }
 
   .app-footer {
-    margin-top: auto;
+    margin-top: 2.4rem;
     padding: 1rem;
     font-size: 14px;
   }
