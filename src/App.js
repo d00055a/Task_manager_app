@@ -11,9 +11,10 @@ export default function App() {
 
   // Get tasks
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/api/tasks/${id}`)
-      .then(res => setTasks(res.data));
-  }, []);
+  axios.get(`${process.env.REACT_APP_API_URL}/api/tasks`)
+    .then(res => setTasks(res.data))
+    .catch(err => console.error("Error fetching tasks:", err));
+}, []);
 
   // Add a new task
   const addTask = async (title) => {
