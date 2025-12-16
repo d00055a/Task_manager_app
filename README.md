@@ -72,14 +72,14 @@ The application demonstrates full **CRUD functionality**, RESTful API communicat
   
 ## Run Locally
 
-**Clone the repositories**
+- **Clone the repositories**
 
 ```bash
 git clone https://github.com/d00055a/Task_manager_app.git
 git clone https://github.com/d00055a/Task_manager_backend.git
 ``` 
 
-**Install dependencies**
+- **Install dependencies**
 
 **Frontend**
 ```bash
@@ -94,9 +94,9 @@ npm install
 ```
 
 
-**Configure environment variables**
+- **Configure environment variables**
 
-**Frontend (Task_manager_app/.env):
+**Frontend** (Task_manager_app/.env):
 
 ```Env
 REACT_APP_API_URL=http://localhost:5000
@@ -123,7 +123,7 @@ cd ../Task_manager_app
 npm start
 ```
 
-**Purpose**
+## Purpose
 
 This project was built to practice and demonstrate:
 
