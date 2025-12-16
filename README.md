@@ -109,7 +109,7 @@ MONGO_URI=mongodb_connection_string
 PORT=5000
 ```
 
-**Run the application**
+- **Run the application**
 
 **Backend**
 ```bash
