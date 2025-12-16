@@ -1,31 +1,59 @@
 # Task Manager App
 
-A full-stack **CRUD application** built with **React (frontend)**, **Node.js + Express (backend)** and **MongoDB (database)**.<br>
-Designed to help users manage tasks efficiently with a clean UI and real-time updates.<br><br>  
+A full-stack **Task Management application** built with **React** on the frontend and **Node.js + Express** on the backend, using **MongoDB** for data persistence.
+
+The application demonstrates full **CRUD functionality**, RESTful API communication and a clean, responsive user interface for managing daily tasks.
 
 
 ## Features
-- Add new tasks  
-- Mark tasks as completed (toggle)  
-- Edit existing tasks  
-- Delete tasks  
-- Validation with modal popup when trying to add an empty task  
-- Data stored in MongoDB  
-- Responsive UI with custom styling <br><br>  
 
+- Create new tasks
+
+- Update existing tasks
+
+- Mark tasks as completed (toggle)
+
+- Delete tasks
+
+- Input validation with modal feedback for empty submissions
+
+- Persistent data storage using MongoDB
+
+- Responsive UI with custom CSS styling  
+
+## Architecture
+
+- **Frontend**: React (GitHub Pages)
+
+- **Backend**: Node.js + Express (Render)
+
+- **Database**: MongoDB Atlas
+
+- **Communication**: REST API using Axios
 
 ## Tech stack
 
 **Frontend**
-- React
-- Axios
-- CSS3 (custom styling) 
+
+- **React** – UI library
+
+- **Axios** – API communication
+
+- **CSS3** – Custom styling & responsive design
 
 **Backend**
-- Node.js
-- Express.js
-- MongoDB + Mongoose
-- CORS, dotenv, morgan <br><br>
+
+- **Node.js** – Server runtime
+
+- **Express.js** – REST API framework
+
+- **MongoDB & Mongoose** – Database & ODM
+
+- **CORS** – Cross-origin resource sharing
+
+- **dotenv** – Environment variable management
+
+- **morgan** – HTTP request logging
 
 ## Deployment
 
@@ -40,63 +68,76 @@ Designed to help users manage tasks efficiently with a clean UI and real-time up
 
 **Backend API**: https://task-api-4e4u.onrender.com (Hosted on Render) <br><br>
 
-- Please note: it may take up to 1 minute for the backend service to wake up (free hosting delay). Once loaded, everything works smoothly !
+- Note: The backend is hosted on Render (free tier), so the first request may take up to 1 minute to wake up.
+  
+## Run Locally
 
-## Local setup
-
-1. **Clone the repository**
+**Clone the repositories**
 
 ```bash
 git clone https://github.com/d00055a/Task_manager_app.git
 git clone https://github.com/d00055a/Task_manager_backend.git
 ``` 
 
-2. **Install dependencies**
+**Install dependencies**
 
-
+**Frontend**
 ```bash
-# Frontend
 cd Task_manager_app
 npm install
 ```
 
-
+**Backend**
 ```bash
-# Backend
 cd ../Task_manager_backend
 npm install
 ```
 
 
-3. **Configure environment variables**
+**Configure environment variables**
 
-In Task_manager_app/.env:
+**Frontend (Task_manager_app/.env):
 
 ```Env
 REACT_APP_API_URL=http://localhost:5000
 ```
 
-In Task_manager_backend/.env:
+**Backend** (Task_manager_backend/.env):
 
 ```Env
 MONGO_URI=mongodb_connection_string
 PORT=5000
 ```
 
-4. **Run both servers**
+**Run the application**
 
+**Backend**
 ```bash
-# Backend
 cd Task_manager_backend
 node server.js
 ```
 
+**Frontend**
 ```bash
-# Frontend
 cd ../Task_manager_app
 npm start
 ```
 
+**Purpose**
+
+This project was built to practice and demonstrate:
+
+- Full-stack CRUD operations
+
+- RESTful API development
+
+- Frontend–backend integration
+
+- MongoDB data persistence
+
+- Real-world project structure and deployment
+
+<br/>
 
 License © 2025 Daniel Dedja. All rights reserved.
 
