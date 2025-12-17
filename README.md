@@ -83,7 +83,7 @@ git clone https://github.com/d00055a/Task_manager_backend.git
 
 **Frontend**
 ```bash
-cd Task_manager_app
+cd task-manager-app
 npm install
 ```
 
