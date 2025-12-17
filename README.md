@@ -137,7 +137,3 @@ This project was built to practice and demonstrate:
 
 - Real-world project structure and deployment
 
-<br/>
-
-License © 2025 Daniel Dedja. All rights reserved.
-
