@@ -76,7 +76,7 @@ The application demonstrates full **CRUD functionality**, RESTful API communicat
 
 ```bash
 git clone https://github.com/d00055a/task-manager-app.git
-git clone https://github.com/d00055a/Task_manager_backend.git
+git clone https://github.com/d00055a/task-manager-backend.git
 ``` 
 
 - **Install dependencies**
