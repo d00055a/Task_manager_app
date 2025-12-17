@@ -1,6 +1,6 @@
 # Task Manager App
 
-A full-stack **Task Management application** built with **React** on the frontend and **Node.js + Express** on the backend, using **MongoDB** for data persistence.
+A full-stack **Task Management Application** built with **React** on the frontend and **Node.js + Express** on the backend, using **MongoDB** for data persistence.
 
 The application demonstrates full **CRUD functionality**, RESTful API communication and a clean, responsive user interface for managing daily tasks.
 
