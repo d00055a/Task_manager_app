@@ -64,7 +64,7 @@ The application demonstrates full **CRUD functionality**, RESTful API communicat
 
 ## Live demo
 
-**Frontend**: https://d00055a.github.io/Task_manager_app/ <br>
+**Frontend**: https://d00055a.github.io/task-manager-app/ <br>
 
 **Backend API**: https://task-api-4e4u.onrender.com (Hosted on Render) <br><br>
 
