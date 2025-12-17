@@ -89,20 +89,20 @@ npm install
 
 **Backend**
 ```bash
-cd ../Task_manager_backend
+cd ../task-manager-backend
 npm install
 ```
 
 
 - **Configure environment variables**
 
-**Frontend** (Task_manager_app/.env):
+**Frontend** (task-manager-app/.env):
 
 ```Env
 REACT_APP_API_URL=http://localhost:5000
 ```
 
-**Backend** (Task_manager_backend/.env):
+**Backend** (task-manager-backend/.env):
 
 ```Env
 MONGO_URI=mongodb_connection_string
@@ -113,13 +113,13 @@ PORT=5000
 
 **Backend**
 ```bash
-cd Task_manager_backend
+cd task-manager-backend
 node server.js
 ```
 
 **Frontend**
 ```bash
-cd ../Task_manager_app
+cd ../task-manager-app
 npm start
 ```
 
