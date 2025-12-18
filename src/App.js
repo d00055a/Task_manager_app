@@ -5,55 +5,81 @@ import TaskList from "./components/TaskList";
 import Modal from "./components/Modal";
 import "./App.css";
 
+const API_URL = process.env.REACT_APP_API_URL || "https://task-api-4e4u.onrender.com";
+
 export default function App() {
   const [tasks, setTasks] = useState([]);
   const [showModal, setShowModal] = useState(false);
 
   // Get tasks
   useEffect(() => {
-  axios.get(`${process.env.REACT_APP_API_URL}/api/tasks`)
-    .then(res => setTasks(res.data))
-    .catch(err => console.error("Error fetching tasks:", err));
-}, []);
+    const fetchTasks = async () => {
+      try {
+        const res = await axios.get(`${API_URL}/api/tasks`);
+        setTasks(res.data);
+      } catch (err) {
+        console.error("Error fetching tasks:", err.response?.data || err.message);
+      }
+    };
+    fetchTasks();
+  }, []);
 
   // Add a new task
   const addTask = async (title) => {
-  if (!title.trim()) {
-    setShowModal(true); 
-    return;
-  }
+    if (!title.trim()) {
+      setShowModal(true);
+      return;
+    }
 
-  try {
-    const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/tasks`, { title });
-    setTasks([...tasks, res.data]);
-  } catch (err) {
-    console.error("Error adding task:", err);
-  }
-};
-  
-  // Update a task
+    try {
+      const res = await axios.post(
+        `${API_URL}/api/tasks`,
+        { title: title.trim(), completed: false }
+      );
+      setTasks([...tasks, res.data]);
+    } catch (err) {
+      console.error("Error adding task:", err.response?.data || err.message);
+    }
+  };
+
+  // Toggle completed
   const toggleTask = async (id, completed) => {
-    const res = await axios.put(`${process.env.REACT_APP_API_URL}/api/tasks/${id}`, { completed: !completed });
-    setTasks(tasks.map(t => (t._id === id ? res.data : t)));
+    try {
+      const res = await axios.put(`${API_URL}/api/tasks/${id}`, {
+        completed: !completed,
+      });
+      setTasks(tasks.map((t) => (t._id === id ? res.data : t)));
+    } catch (err) {
+      console.error("Error updating task:", err.response?.data || err.message);
+    }
   };
 
   // Update task title
   const updateTaskTitle = async (id, newTitle) => {
-  if (!newTitle.trim()) return;
-  const res = await axios.put(`${process.env.REACT_APP_API_URL}/api/tasks/${id}`, { title: newTitle });
-  setTasks(tasks.map(t => (t._id === id ? res.data : t)));
-   };
+    if (!newTitle.trim()) return;
 
-  // Delete a task
+    try {
+      const res = await axios.put(`${API_URL}/api/tasks/${id}`, {
+        title: newTitle.trim(),
+      });
+      setTasks(tasks.map((t) => (t._id === id ? res.data : t)));
+    } catch (err) {
+      console.error("Error updating task title:", err.response?.data || err.message);
+    }
+  };
+
+  // Delete task
   const deleteTask = async (id) => {
-    await axios.delete(`${process.env.REACT_APP_API_URL}/api/tasks/${id}`);
-    setTasks(tasks.filter(t => t._id !== id));
+    try {
+      await axios.delete(`${API_URL}/api/tasks/${id}`);
+      setTasks(tasks.filter((t) => t._id !== id));
+    } catch (err) {
+      console.error("Error deleting task:", err.response?.data || err.message);
+    }
   };
 
   return (
-
     <div className="app">
-
       <header className="app-header">
         <h1>Task Manager App</h1>
       </header>
@@ -64,7 +90,7 @@ export default function App() {
         <TaskInput addTask={addTask} />
 
         {tasks.length === 0 && (
-            <p className="noTasks">No tasks yet. Add your first task!</p>
+          <p className="noTasks">No tasks yet. Add your first task!</p>
         )}
 
         <TaskList
@@ -84,14 +110,7 @@ export default function App() {
           message="Please enter a task before adding!"
           onClose={() => setShowModal(false)}
         />
-        
       )}
-
     </div>
-
   );
-
 }
-
-
-
