@@ -68,7 +68,7 @@ The application demonstrates full **CRUD functionality**, RESTful API communicat
 
 **Backend API**: https://task-api-4e4u.onrender.com (Hosted on Render) <br><br>
 
-- Note: The backend is hosted on Render (free tier), so the first request may take up to 1 minute to wake up.
+- Note: The backend is hosted on Render (free tier), so the first request may take up to **1 minute** to wake up.
   
 ## Run Locally
 
